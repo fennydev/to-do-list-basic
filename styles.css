@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f4f4f4;
+    transition: background 0.3s ease;
+}
+
+h1 {
+    color: #333;
+}
+
+input {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    background: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode li {
+    background: #555;
+    color: white;
+}
+
+.dark-mode button {
+    background: #ff4d4d;
+}
+
+.dark-mode button:hover {
+    background: #e60000;
+}
+
+
+li {
+    margin: 10px 0;
+    background: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, opacity 0.3s;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

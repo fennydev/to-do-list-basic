@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(157, 198, 157);
+}
+
+body .main-content {
+    align-items: center;
+    padding-left: 500px;
+    
+}
+
+body .main-content .title {
+    align-items: center;
+    padding-left: 40px;
+    font-size: x-large;
+}
+
+
+

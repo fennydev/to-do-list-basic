@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>TO DO LIST</title>
+
+    <link rel="stylesheet" href="/to-do-app/styles.css">
+</head>
+<body>
+    <div class="title">
+        <h1>TO DO LIST</h1>
+    </div>
+        <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+        <br><br>
+        <input type="text" id="taskInput" placeholder="Add a new task">            <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+        
+        <script src="script.js"></script>
+        
+        <select id="categorySelect">
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="Shopping">Shopping</option>
+        </select>
+
+        <input type="date" id="dueDate">
+
+
+    </div>
+    
+</body>
+</html>
